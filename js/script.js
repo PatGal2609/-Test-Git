@@ -35,12 +35,12 @@
 // const test = '';
 // console.log(typeof test, test);
 // console.log(typeof Boolean(test), Boolean(test));
-const var1 = 2;
-const  var2 = '3';
-console.log(var1 < var2);
-const a = 'ананас';
-const b ='яблоко';
-console.log(a.charCodeAt(), b.charCodeAt());
+// const var1 = 2;
+// const  var2 = '3';
+// console.log(var1 < var2);
+// const a = 'ананас';
+// const b ='яблоко';
+// console.log(a.charCodeAt(), b.charCodeAt());
 
 const jsName = prompt('Quel est lappelation officel de JavaScript?', '');
 
@@ -50,3 +50,24 @@ if (jsName =='ECMAScript') {
 else {
     alert('Tu ne connais pas ECMAScript?');
 }
+
+let anyNumber = prompt('Entre un chiffre', '')
+
+if (anyNumber > 0) {
+    alert(1);
+}
+else if (anyNumber < 0) {
+    alert(-1);
+}
+else {
+    alert(0)
+}
+
+let result;
+result = (a + b < 4) ? 'Petit' : 'Beaucoup';
+
+let message;
+let login = prompt('Quel est votre status dans la boite?', '');
+
+message = (login == 'Member') ? alert('Salut') : (login == 'Directeur') ? alert('Bonjour') : 
+(login == '') ? alert('Login manquant') : alert('');
