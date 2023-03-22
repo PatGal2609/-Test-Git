@@ -41,3 +41,12 @@ console.log(var1 < var2);
 const a = 'ананас';
 const b ='яблоко';
 console.log(a.charCodeAt(), b.charCodeAt());
+
+const jsName = prompt('Quel est lappelation officel de JavaScript?', '');
+
+if (jsName =='ECMAScript') {
+    alert('Bonne reponse');
+} 
+else {
+    alert('Tu ne connais pas ECMAScript?');
+}
