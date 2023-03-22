@@ -71,15 +71,53 @@
 
 // message = (login == 'Member') ? alert('Salut') : (login == 'Directeur') ? alert('Bonjour') : 
 // (login == '') ? alert('Login manquant') : alert('');
-let userAge = prompt('Quel est votre age', '');
-if (14<= userAge && userAge <= 90) {
-    alert('Bienvenue')
+// let userAge = prompt('Quel est votre age', '');
+// if (14<= userAge && userAge <= 90) {
+//     alert('Bienvenue')
+// }
+
+// if (userAge < 14 || userAge > 90) {
+//     alert('Visiteur ne ordinaire')
+// }
+// == ->
+// if (!(14<= userAge && userAge <= 90)) {
+//     alert('Bienvenue')
+// }
+
+// let userLogin = prompt('Login ', '');
+// let userParole = prompt('Mot de passe ', '');
+
+// if (userLogin == 'Admin') {
+//     userParole;
+//     if (userParole == 'iam the boss') {
+//         alert('Bienvenue Boss! ')
+//     }
+//     else if (!(userParole == 'iam tehe boss')) {
+//         alert('Wrong password')
+//     }
+// }
+// else if ((userLogin = !'Admin')) {
+//     alert('Je ne vous connais pas')
+// }
+
+let userLogin = prompt('Prsentez-vous: ', '');
+
+if (userLogin === 'Admin') {
+    let userPassw = prompt('Votre mot de passe: ', '');
+    if (userPassw === 'iam the boss') {
+        alert('Bienvenue Boss');
+    }
+    else if (userPassw === '' || userPassw === null) {
+        alert('Annulle')
+    }
+    else {
+        alert('Mot de passe incorect')
+    }
+}
+else if (userLogin === '' || userLogin === null) {
+    alert('Annulle')
+}
+else {
+    alert('Je ne vous connais pas')
 }
 
-if (userAge < 14 || userAge > 90) {
-    alert('Visiteur ne ordinaire')
-}
-
-if (!(14<= userAge && userAge <= 90)) {
-    alert('Bienvenue')
-}
