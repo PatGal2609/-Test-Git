@@ -42,32 +42,44 @@
 // const b ='яблоко';
 // console.log(a.charCodeAt(), b.charCodeAt());
 
-const jsName = prompt('Quel est lappelation officel de JavaScript?', '');
+// const jsName = prompt('Quel est lappelation officel de JavaScript?', '');
 
-if (jsName =='ECMAScript') {
-    alert('Bonne reponse');
-} 
-else {
-    alert('Tu ne connais pas ECMAScript?');
+// if (jsName =='ECMAScript') {
+//     alert('Bonne reponse');
+// } 
+// else {
+//     alert('Tu ne connais pas ECMAScript?');
+// }
+
+// let anyNumber = prompt('Entre un chiffre', '')
+
+// if (anyNumber > 0) {
+//     alert(1);
+// }
+// else if (anyNumber < 0) {
+//     alert(-1);
+// }
+// else {
+//     alert(0)
+// }
+
+// let result;
+// result = (a + b < 4) ? 'Petit' : 'Beaucoup';
+
+// let message;
+// let login = prompt('Quel est votre status dans la boite?', '');
+
+// message = (login == 'Member') ? alert('Salut') : (login == 'Directeur') ? alert('Bonjour') : 
+// (login == '') ? alert('Login manquant') : alert('');
+let userAge = prompt('Quel est votre age', '');
+if (14<= userAge && userAge <= 90) {
+    alert('Bienvenue')
 }
 
-let anyNumber = prompt('Entre un chiffre', '')
-
-if (anyNumber > 0) {
-    alert(1);
-}
-else if (anyNumber < 0) {
-    alert(-1);
-}
-else {
-    alert(0)
+if (userAge < 14 || userAge > 90) {
+    alert('Visiteur ne ordinaire')
 }
 
-let result;
-result = (a + b < 4) ? 'Petit' : 'Beaucoup';
-
-let message;
-let login = prompt('Quel est votre status dans la boite?', '');
-
-message = (login == 'Member') ? alert('Salut') : (login == 'Directeur') ? alert('Bonjour') : 
-(login == '') ? alert('Login manquant') : alert('');
+if (!(14<= userAge && userAge <= 90)) {
+    alert('Bienvenue')
+}
